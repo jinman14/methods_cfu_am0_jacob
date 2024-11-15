@@ -7,21 +7,24 @@
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
 "Hello World".downcase
-
+#makes all characters in the specified area lower case.
 
 "Hello World".include?("Hello")
+#Asks for a Boolean value, if the given String in included in the specified section
 
-
-"Hello World".end_with?("Hello")
-
+puts "Hello World".end_with?("Hello")
+#Asks for Boolean, if it ends with specified String. This would return false.
 
 "Hello World".end_with?("rld")
+#This would be true, considering it does.
 
 
 12.even?
+#Asks for Boolean, if the given integer is even. This would return true.
 
 
 18.next
+#This asks for the next number in the given sequence.
 
 
 
