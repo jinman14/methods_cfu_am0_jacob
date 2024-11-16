@@ -84,17 +84,26 @@ puts howdy_there #results in "Well if it ain't Clint Octavious Eastwood!""
 # 4: Write a method named "square" that takes in one integer, and returns the square of that integer.
 
 def square(integer)
-  "#{integer}".sqrt
+  Math.sqrt(integer)
+end
+
+def timestwo(numbers)
+  numbers * numbers
 end
 
 # Call the method at least twice, and store the return value in a variable:
 root1 = square(25)
 root2 = square(100)
+root3 = square(40)
+
 
 # Use the puts or print command to see the return value in the console:
 
 puts root1
 puts root2
+puts root3
+
+puts timestwo(2)
 
 # What is the return value of your method?
 # How many arguments did you pass your method?
@@ -106,24 +115,24 @@ puts root2
 # 5: Write a method named "check_stock" that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-def check_stock(number, item)
-  if number >= 4
+def check_stock(num1, item)
+  if num1 >= 4
     "#{item} is stocked"
-  elsif number > 0
+  elsif num1 > 0
      "#{item} - running LOW"
-  elsif
+  else
     "#{item} - OUT of stock!"
   end
 end
 
-check_stock(4, "Coffee");
+puts check_stock(4, "Coffee");
 # => "Coffee is stocked"
 
-check_stock(3, "Tortillas");
+puts check_stock(3, "Tortillas");
 # => "Tortillas - running LOW"
 
-check_stock(0, "Cheese");
+puts check_stock(0, "Cheese");
 # => "Cheese - OUT of stock!"
 
-check_stock(1, "Salsa");
+puts check_stock(1, "Salsa");
 # => "Salsa - running LOW"
