@@ -71,3 +71,12 @@ puts Integer.try_convert (10.6284746378564)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+array1 = [1,2,3]
+array2 = ["dog","cat","mouse"]
+
+#puts the last string in the array on display.
+puts array2.last
+
+#adds numbers to the array, and apparently drops them down one by one.
+puts array1.push(4,5,6,7,8,9,10)
