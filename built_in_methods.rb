@@ -34,6 +34,15 @@ puts "Hello World".end_with?("Hello")
 # https://ruby-doc.org/core-3.1.0/String.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+#1. substitutes the bracketed characters with the new desired output. Creates a menace of a string.
+hi = "hello how are you?"
+puts hi.gsub(/[aeiou]/, 'uh oh') #results in "huh ohlluh oh huh ohw uh ohruh oh yuh ohuh oh?"
+
+#2. This method switches things that were capital to lowercase, and lower case to capital
+scary = "sPoOkY sCaRy BoOoO!"
+puts scary.swapcase! #results in "SpOoKy ScArY bOoOo!"
+
+
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
 # The start_with? method returns true if the data in the first_name variable starts with the argument passed in.
@@ -50,6 +59,11 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+#This method provides the square root of the integer in the brackets.
+puts Integer.sqrt(24) #results in 4
+
+#This method returns the float given into an integer.
+puts Integer.try_convert (10.6284746378564)
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
