@@ -105,9 +105,10 @@ puts root3
 
 puts timestwo(2)
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
-# What data type was your argument(s)?
+# What is the return value of your method? Well it was two different things. The first one I was taking
+#the square root. The second one (done properly) I was multiplying it by two.
+# How many arguments did you pass your method? one argument per method.
+# What data type was your argument(s)? Float with the Math. function, and integer with the other.
 
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
